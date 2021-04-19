@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Home page</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width , initial-scale=1">
+</head>
+<body>
+    
+    <div class="main">
+    	<div class="navbar">
+    		<a href="#" id="logo">Game sop</a>
+    		<div class="all_btns">		
+    		   <button id="more">more&nbsp;&nbsp;<i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+    		   <button id="menu_btn"><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+    		     <div class="options">
+    		         <button>Apps&nbsp;&nbsp;<i class="fa fa-android" aria-hidden="true"></i></   button>
+    		         <button>Games&nbsp;&nbsp;<i class="fa fa-gamepad" aria-hidden="true"></i></button>
+    		         <button>Trending&nbsp;&nbsp;<i class="fa fa-trophy" aria-hidden="true"></i></button>
+    		         <button>Privacy policy&nbsp;&nbsp;<i class="fa fa-eye" aria-hidden="true"></i></button>
+    		     </div>
+    		</div>
+    	</div>
+
+    	<div class="mid_part">
+    		
+    		<h2>play with teammate easy & sloe</h2>
+    		<div class="search_part">
+    			<input type="text" placeholder="search your apps or game">
+    			<input type="submit" value="search">
+    		</div>
+
+    		<div class="games_part">
+    			<div class="games">
+    			<div class="game">
+    				<img src="game1.jpg" alt="">
+
+    				<div class="desc">
+    					<a href="#">modern combat</a>
+
+    					<div class="desc_mid">
+    						<p><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+    						<p id="type">action</p>
+    					</div>
+    					
+    				</div>
+    				
+    			</div>
+
+    			<div class="game">
+    				<img src="game2.jfif" alt="">
+
+    				<div class="desc">
+    					<a href="#">modern combat</a>
+
+    				<div class="desc_mid">
+    					<p><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+    					<p id="type">action</p>
+    				</div>
+
+    			</div>
+    			</div>
+
+    			<div class="game">
+    				<img src="game2.jfif" alt="">
+
+    				<div class="desc">
+    					<a href="#">modern combat</a>
+
+    					<div class="desc_mid">
+    						<p><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+    						<p id="type">action</p>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="game">
+    				<img src="game1.jpg" alt="">
+
+    				<div class="desc">
+    					<a href="#">modern combat</a>
+    					<div class="desc_mid">
+    						<p><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+    						<p id="type">action</p>
+    					</div>
+    				</div>
+    			</div>
+
+    			<div class="game">
+    				<img src="game1.jpg" alt="">
+
+    				<div class="desc">
+    					<a href="#">modern combat</a>
+    					<div class="desc_mid">
+    						<p><i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star" aria-hidden="true"></i>&nbsp;<i class="fa fa-star-half-o" aria-hidden="true"></i></p>
+    						<p id="type">action</p>
+    					</div>
+    				</div>
+    			</div>
+    		  </div>
+
+    		</div>
+    	</div>
+    </div>
+	
+
+	<script>
+		let menu_btn = document.querySelector('#menu_btn');
+		let options = document.querySelector('.options');
+
+		menu_btn.addEventListener('click', function(){
+          options.classList.toggle('active_options');
+		});
+	</script>
+</body>
+</html>

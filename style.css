@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	background: #E8DAEF;
+}
+.main{
+	position: relative;
+	width: 90%;
+	margin: 1.5em 0;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	border-radius: 25px;
+	background: #fff;
+	box-shadow: 0 0 0 10px rgba(0,0,0,0.06);
+}
+.navbar{
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    width: 90%;
+    min-height: 30px;
+    padding: 15px;
+    margin-bottom: 1.5em;
+}
+.navbar .all_btns{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.navbar #logo{
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 2em;
+	font-weight: bold;
+	color: #34495E;
+	letter-spacing: 1.5px;
+	font-family: 'Berkshire Swash', cursive;
+}
+.navbar button{
+	margin: 5px 10px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	border-radius: 8px;
+	color: #34495E;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: capitalize;
+	background: rgba(0,0,0,0.06);
+}
+.main .mid_part{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px;
+	width: 90%;
+	height: 500px;
+	border-radius: 25px;
+	background: linear-gradient(to right,#6C3483 10%, #A569BD 50%, #BB8FCE 100%);
+	margin-bottom: 7em;
+	position: relative;
+}
+.main .mid_part h2{
+	font-size: 2.1em;
+	text-transform: capitalize;
+	color: #fff;
+}
+.search_part{
+	width: 50%;
+	height: 50px;
+/*	border: 1px solid #fff;*/
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-top: 5em;
+}
+.search_part input[type=text]{
+	padding: 7px 18px;
+	width: 100%;
+	height: 100%;
+	font-size: 1.2em;
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	box-shadow: 0 0 0 3px rgba(0,0,0,0.06);
+}
+.search_part input[type=submit]{
+    position: absolute;
+    right: 10px;
+    padding: 5px 15px;
+	height: 80%;
+	border-radius: 15px;
+	outline: none;
+	border: none;
+	font-size: 1em;
+	cursor: pointer;
+	color: #fff;
+	box-shadow: 0 0 0 5px rgba(0,0,0,0.06);
+	background: linear-gradient(to right,#6C3483 10%, #A569BD 50%, #BB8FCE 100%);
+}
+/*::-webkit-scrollbar {
+	height: 8px;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+	background: #EC407A;
+	border-radius: 5px;
+}*/
+
+.games_part{
+	position: absolute;
+	z-index: 10;
+	bottom: -3em;
+	width: 90%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+/*    border: 1px solid #fff;*/
+}
+.games_part .games{
+	position: relative;
+	width: 100%;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+	overflow-x: scroll;
+}
+.games_part .game{
+	position: relative;
+	border-radius: 15px;
+	padding: 8px;
+	width: 200px;
+	min-height: 200px;
+	background: #F8F9F9;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0 0 0 10px rgba(0,0,0,0.06);
+}
+.games_part .game:hover{
+	margin-top: -2px;
+	cursor: pointer;
+}
+.games_part .game .desc{
+	margin-top: 1em;
+	width: 100%;
+}
+.games_part .game .desc_mid{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.games_part .game .desc #type{
+	text-transform: capitalize;
+    padding: 5px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: linear-gradient(to right,#6C3483 10%, #A569BD 50%, #BB8FCE 100%);
+}
+.games_part .game a{
+	text-decoration: none;
+	text-transform: capitalize;
+	color: #34495E;
+}
+.games_part .game:not(:first-child){
+	margin-left: 2.5em;
+}
+.games_part .game img{
+	border-radius: 15px;
+	height: 170px;
+	width: 180px;
+	object-fit: cover;
+}
+
+
+@media(max-width: 700px){
+	.search_part{
+		width: 90%;
+	}
+	.games_part{
+		width: 90%;
+/*	border: 1px solid #fff;*/
+	}
+	.navbar .options{
+		display: none;
+		overflow: hidden;
+	}
+	.navbar #menu_btn{
+	  display: block;
+    }
+}
+
+
+#menu_btn{
+	display: none;
+	color: #fff;
+	box-shadow: 0 0 0 10px rgba(0,0,0,0.06);
+	background: linear-gradient(to right,#6C3483 10%, #A569BD 50%, #BB8FCE 100%);
+}
+.navbar .active_options{
+   position: absolute;
+   top: 65px;
+   right: 15px;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   z-index: 20;
+   border-radius: 5px;
+   transition: 0.5s;
+   background: linear-gradient(to right,#6C3483 10%, #A569BD 50%, #BB8FCE 100%);
+}
+.navbar .active_options button{
+	width: 100%;
+	color: #fff;
+}
+.navbar #more{
+	padding: 8px 12px;
+}
